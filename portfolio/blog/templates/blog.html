@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for b in blogs.all %}
+
+    <h1>{{ b.title }}</h1>
+    <p>{{ b.create_date }}</p>
+    {{ b.short_text }}<br>
+    {{ b.create }}<br>
+    <img src="{{ b.pic.url }}" alt="">
+
+{% endfor %}
+
+
+</body>
+</html>
