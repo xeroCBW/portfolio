@@ -8,7 +8,7 @@
 
 {% for b in blogs.all %}
 
-    <h1>{{ b.title }}</h1>
+    <a href="{{ b.id }}"> <h1>{{ b.title }}</h1></a>
     <p>{{ b.create_date }}</p>
     {{ b.short_text }}<br>
     {{ b.create }}<br>
